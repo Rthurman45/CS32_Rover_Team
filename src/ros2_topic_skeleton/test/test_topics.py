@@ -25,8 +25,8 @@ def publisher_process():
 
 def test_topics_exist(publisher_process):
     expected_topics = {
-        '/temp_topic_3',
-        '/temp_topic_4'
+        '/temp_topic_1',
+        '/temp_topic_2'
     }
 
     discovered_topics = set()
