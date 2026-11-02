@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+
+  <name>ros2_topic_skeleton</name>
+  <version>0.0.1</version>
+
+  <description>
+    ROS 2 package for testing topic creation.
+  </description>
+
+  <maintainer email="developer@example.com">
+    ROS Developer
+  </maintainer>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <test_depend>ament_pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+
+</package>
