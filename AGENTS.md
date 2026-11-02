@@ -1,11 +1,22 @@
-# project context
+## Project Context
+Autonomous navigation system for Mars Rover Robot. Requirements: docs/requirements.md
+Architecture: docs/design.md. Decisions and reasons: docs/adr/.
+Open Risks: docs/risks.md; don't edit it.
 
-We are working on mutiple systems and old code. they are seperate and work independantly which will lead to alot of testing.
+## Commands
+None. You will be handling documentation not the code.
 
-# conventions
+## Work
+GitHub Issues; docs/agents/issue-tracker.md says how to read one
+and what the labels mean. Done means the
+issue's acceptance criteria and the Definition of Done in
+CONTRIBUTING.md.
 
-Make sure to comment on your code and leave a discription of what the code is supposed to be doing. Also leave addequate spacing so the code is easier to read.
+## Conventions
+- Use markdown formatting and include headers ### with line separators after ---
+- After modifying a file, include your reasons and a summary of what you changed in a new file in docs/adr/ that is titled with a short name that details the modification you made and the file name you changed
 
-# constraints
-
-There are to many parts for AI to do all of it so before you push, double check. Don't utilize AI to do it all, chunks, segments, and debugging are fine.
+## Boundaries
+- Always:  review existing file content before modifying
+- Ask first: changing requirements, design, or risks
+- Never: commit to main default branch or edit generated files
