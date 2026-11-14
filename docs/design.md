@@ -32,8 +32,7 @@ graph TD
 ## Deployment
     - By week 10 the nav autonomy functions should be complete and updated from the previous version of ROS2. The system should be able to successfully run on the rover's hardware and be able to navigate to given GPS points and there should be a working base of a Unity UI and Computer vision model.
     - Production: The completed code will be stored in the DAM Robotics Github and is owned by the Dam Robotics club, this milestone and progess was agreed upon with our project sponsor Jared Northrop.
-    - Rollback: The previous years code will be available to fall back to if absolutely necessary
-
+    - Rollback: Once we complete updating the existing code to ROS2 Jazzy we will name the commit specifically so it can be rolled back to in case our new features introduce errors or undefined behavior.
 ## Open questions
     - Is the scope of this project too large for just the 3 of us to be able to finish within the given timeframes
 
