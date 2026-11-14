@@ -8,8 +8,10 @@ ROS2 Rover software built by a wide range of teams. Our focus this term is the n
 graph TD
     UI[Unity UI] -- GPS Waypoints --> ROS[ROS2 Jazzy Backend]
     ROS -- Telemetry & Map Data --> UI
+
+    Camera[Raw Camera Input] -- Camera frames stitched together from multiple cameras --> YOLO
     
-    YOLO[YOLO Vision Pipeline] -- Target Coordinates & Bounding Boxes --> ROS
+    YOLO[YOLO Vision Pipeline] -- Target Coordinates & Bounding Boxes & AruCo Tag Detection & Gesture Recognition --> ROS
     
     ROS -- Motor & Navigation Commands --> Hardware[Rover Chassis & Arm]
 ```    
