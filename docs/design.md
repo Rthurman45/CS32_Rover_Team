@@ -9,6 +9,9 @@ graph TD
     UI[Unity UI] -- GPS Waypoints --> ROS[ROS2 Jazzy Backend]
     ROS -- Telemetry & Map Data --> UI
 
+    NAV[Navigation] -- Navigating to a specfici GPS point, alerts when arrived --> ROS
+    ROS -- Uses camera inputs to implement object avoidance and navigate to hammer/AruCo tags --> NAV
+
     Camera[Raw Camera Input] -- Camera frames stitched together from multiple cameras --> YOLO
     
     YOLO[YOLO Vision Pipeline] -- Target Coordinates & Bounding Boxes & AruCo Tag Detection & Gesture Recognition --> ROS
